@@ -1,0 +1,278 @@
+html{
+    background-image: linear-gradient(to bottom right, #ff5e8a, #3fd8b8);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #ff5e8a, #3fd8b8);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+
+
+
+.container{
+    max-width: 1024px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+header{
+    align-items: center;
+    justify-content:center; 
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 133.5px;  
+    height: 133.5px; 
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+
+.circle p{
+    font-family: "Noto Sans TC", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+nav{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbutton{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dropdownbox{
+    display:none ;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    width: 50px;
+}
+
+.dropdownbox a{
+    size: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;         
+    height: auto; 
+    margin-right: 5px;        
+}
+
+.navbutton:hover .dropdownbox{
+    display: block;
+}
+
+.icon{
+    display: flex;
+}
+
+.icon span{
+    color: white;
+}
+
+.like {
+    font-size: 24px;
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .like.filled {
+    color: red; 
+    
+  }
+
+  .repost{
+    font-size: 24px;
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .repost.filled{
+    color: #3fd8b8;
+  }
+
+  .save{
+    font-size: 24px;
+    color: transparent;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .save.filled {
+    color:gold; 
+    
+  } 
+
+main{
+    margin: auto;
+    align-items: center;
+   
+}
+
+main img{
+
+    width:1022.1px;
+    height: 663.4px;
+    
+
+}
+
+.carousel-indicators button {
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+
+.title p{
+    color: rgb(255, 255, 255);
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ex a{
+    text-decoration: none;
+}
+
+.ex:hover{
+    text-decoration: underline;
+    
+}
+
+.content1, .content2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2{
+    border-bottom: 3px solid white;
+}
+
+.content1 p, .content2 p{
+    color: rgb(255, 255, 255);
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.comment1, .comment3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.comment2{
+    display: flex;
+    align-items: center;
+
+}
+
+.box1 img{
+    border-radius: 50%;
+    width: 143.3px;
+    height: 143.3px;
+}
+
+.box2{
+    padding-left: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+.box2 iframe{
+    width: 100%;
+    height: 80%;
+}
+
+
+.box3{
+    padding-left: 40px;
+}
+
+.box3 img{
+    width: 100%;
+    height: auto;
+}
+.box4 {
+    padding-left: 40px;
+}
+.box4 img{
+    width: 100%;
+    height: auto;
+}
+
+.comment1 p, .comment2 p, .comment3 p, .ex a{
+    color: rgb(255, 255, 255);
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 400px){
+
+    body{
+        position: absolute;
+    }
+
+    .carousel-item{
+        height: auto;
+
+    }
+
+    .comment1, .comment2, .comment3{
+        align-items: flex-start;
+    }
+
+    iframe{
+        width: 684.9px;
+    }
+
+    .box4 img{
+        width: 684.9px;
+        height: auto;
+    }
+    
+}
